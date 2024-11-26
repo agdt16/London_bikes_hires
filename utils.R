@@ -10,7 +10,8 @@ createMap <- function(data,
                        var_init = "nbikes") {
   pal <- colorNumeric(colorpal, domain = data[[var_init]])
   
-  leaflet(data, width = "100%", height = "100%") %>%
+  leaflet(data, width = "100%", height = "100%",
+          options = leafletOptions(minZoom = 3)) %>%
     fitBounds(
       lng1 = as.numeric(bbox["xmin"]),
       lat1 = as.numeric(bbox["ymin"]),
