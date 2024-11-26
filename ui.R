@@ -7,13 +7,14 @@ library(shinyjs)
 library(shinythemes)
 library(sf)
 library(RColorBrewer)
+library(shinycssloaders)
 ui <- fluidPage(
   useShinyjs(),
   includeCSS("styles.css", encoding = "UTF-8"),
   theme = shinytheme("sandstone"),
   tags$head(tags$script(src = "leaflet_setStyle_functions.js"))
   ,
-  leafletOutput("map", height = "100vh"),
+  shinycssloaders::withSpinner(leafletOutput("map", height = "100vh")),
   absolutePanel(
     id = "abspanel_map_left",
     width = "auto",
