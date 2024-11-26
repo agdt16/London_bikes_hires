@@ -1,6 +1,4 @@
-# London_bikes_hires
-
-Objectif : Visualisation cartographique autour du dataset spData::cycle_hire 
+# Objectif : Visualisation cartographique autour du dataset spData::cycle_hire 
 
 Description :   Développer une app shiny basée sur une carte, qui en utilisant les données du package "spData", data set "cycle_hire" et plus si affinités, permette de:
 - Afficher sur la carte les points de location de vélo,
