@@ -6,7 +6,7 @@
 	right: 0;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	overflow: hidden;
+	overflow: hidden; /* Cacher les scrolleurs */
 }
 
 /* Marge de la carte leaflet */
@@ -24,11 +24,11 @@
     }
     
 .control-label {
-      text-align: center; /* Centrer le texte */
+      text-align: center; 
       display: block;
     }
     .irs-grid-text {
-      font-size: 14px; /* Taille des annotations sous le curseur */
+      font-size: 14px; /* Taille des ticks */
     }
 
 .form-group-label {
@@ -43,7 +43,6 @@
 
 /* Absolute panel gauche de la carto */
 #abspanel_map_left {
-  /* Appearance */
   border-style: none;
   background-color: transparent;
   padding: 20px 0px 0px 20px;
@@ -54,7 +53,6 @@
 }
 
 #abspanel_palette {
-  /* Appearance */
   border-style: none;
   background-color: transparent;
   padding: 20px 0px 0px 20px;
