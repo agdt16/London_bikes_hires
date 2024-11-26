@@ -41,7 +41,7 @@ ui <- fluidPage(
         min = 0,
         max = max(cycle_hire$nbikes),
         value = 0,
-        width = "300px",
+        width = "280px",
         step = 1
       ),
       
@@ -51,7 +51,7 @@ ui <- fluidPage(
         min = 0,
         max = max(cycle_hire$nempty),
         value = 0,
-        width = "300px",
+        width = "280px",
         step = 1
       )
     )
