@@ -8,4 +8,4 @@ Objectif : Visualisation cartographique autour du dataset spData::cycle_hire
 # Notes
 
 - leaflet_setStyle_functions.R :
-- - Des fonctions utilitaires sont importées de https://github.com/rstudio/leaflet/pull/598 : leaflet_setStyle_functions.R
+  - Des fonctions utilitaires sont importées de https://github.com/rstudio/leaflet/pull/598 : leaflet_setStyle_functions.R
