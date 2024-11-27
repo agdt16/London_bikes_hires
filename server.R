@@ -5,9 +5,9 @@ server <- function(input, output, session) {
   data("cycle_hire_osm")
   
   # fcts utilisées pour les traitements serveur
-  source("utils.R")
+  source("fonctions/fcts_server.R")
   # fcts utilisées pour mettre à jour les couleurs de marqueurs via leafletProxy
-  source("leaflet_setStyle_functions.R")
+  source("fonctions/fcts_leaflet_setStyle.R")
   
   # RV
   values <- reactiveValues(past_min_bikes = 0, # indique la dernière selection du slider, init a 0 comme le slider

@@ -10,7 +10,7 @@ library(RColorBrewer)
 library(shinycssloaders)
 ui <- fluidPage(
   useShinyjs(),
-  includeCSS("styles.css", encoding = "UTF-8"),
+  includeCSS("www/styles.css", encoding = "UTF-8"),
   theme = shinytheme("sandstone"),
   tags$head(tags$script(src = "leaflet_setStyle_functions.js"))
   ,
