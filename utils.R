@@ -18,12 +18,6 @@ createMap <- function(data,
       lng2 = as.numeric(bbox["xmax"]),
       lat2 = as.numeric(bbox["ymax"])
     ) %>%
-    setMaxBounds(
-      lng1 = as.numeric(bbox["xmin"]),
-      lat1 = as.numeric(bbox["ymin"]),
-      lng2 = as.numeric(bbox["xmax"]),
-      lat2 = as.numeric(bbox["ymax"])
-    ) %>%
     addProviderTiles(providers$CartoDB.Positron,
                      options = providerTileOptions(noWrap = TRUE),
                      group = "POS") %>% addProviderTiles("OpenStreetMap.Mapnik", group = "OSM") %>%
